@@ -1,0 +1,25 @@
+@for $i from 1 through 4{
+    .m-#{$i}{
+        margin: $i *9px;
+    }
+}
+@for $i from 1 through 4{
+    .mt-#{$i}{
+        margin-top: $i *9px;
+    }
+}
+@for $i from 1 through 4{
+    .mb-#{$i}{
+        margin-bottom: $i *9px;
+    }
+}
+@for $i from 1 through 4{
+    .ml-#{$i}{
+        margin-left: $i *9px;
+    }
+}
+@for $i from 1 through 4{
+    .mr-#{$i}{
+        margin-right: $i *9px;
+    }
+}

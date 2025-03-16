@@ -1,0 +1,25 @@
+@for $i from 1 through 4{
+    .p-#{$i}{
+        padding: $i *9px;
+    }
+}
+@for $i from 1 through 4{
+    .pt-#{$i}{
+        padding-top: $i *9px;
+    }
+}
+@for $i from 1 through 4{
+    .pb-#{$i}{
+        padding-bottom: $i *9px;
+    }
+}
+@for $i from 1 through 4{
+    .pl-#{$i}{
+        padding-left: $i *9px;
+    }
+}
+@for $i from 1 through 4{
+    .pr-#{$i}{
+        padding-right: $i *9px;
+    }
+}

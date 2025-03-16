@@ -1,0 +1,48 @@
+@import "./util/varible";
+@import "./base/rest";
+@import "./util/mixin";
+@import "./util/grid";
+@import "./util/contianer";
+@import "./component/input";
+@import "./component/button";
+@import "./spaces/marign";
+@import "./spaces/padding";
+
+body{
+    min-height:86vh;
+    color: $priBodyCR;
+    margin-top:100px ;
+    background-color:$sceBodyBG;
+    animation-name: animationBG;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transition: .5s;
+    animation-timing-function:ease-in-out;
+    form {
+        h1{
+            text-align: center;
+        }
+        &:nth-child(1){
+            @include Layout(12);
+            @include Layout(11,"sm");
+            @include Layout(11,"md");
+            @include Layout(11,"lg");
+            div label{
+                font-size: 20px;
+            }
+        }
+    }
+
+}
+
+@keyframes animationBG {
+    0%{
+        background-color:$sceBodyBG;
+    }
+    50%{
+        background-color:$priBodyBG;
+    }
+    100%{
+        background-color:$sceBodyBG;
+    }
+}

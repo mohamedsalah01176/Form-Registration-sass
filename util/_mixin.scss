@@ -1,0 +1,61 @@
+@mixin Layout($columns:12,$typOfScreen:""){
+    @if($typOfScreen == "sm"){
+        @media (min-width:"500px"){
+            @for $i from 1 through $columns{
+                .col-#{$typOfScreen}-#{$i}{
+                    width: $i/$columns *100%;
+                }
+            }
+        }
+    }@else if($typOfScreen == "md"){
+        @media (min-width:"700px"){
+            @for $i from 1 through $columns{
+                .col-#{$typOfScreen}-#{$i}{
+                    width: $i/$columns *100%;
+                }
+            }
+        }
+    }@else if($typOfScreen == "lg"){
+        @media (min-width:"800px"){
+            @for $i from 1 through $columns{
+                .col-#{$typOfScreen}-#{$i}{
+                    width: $i/$columns *100%;
+                }
+            }
+        }
+    }@else if($typOfScreen == "xl"){
+        @media (min-width:"1100px"){
+            @for $i from 1 through $columns{
+                .col-#{$typOfScreen}-#{$i}{
+                    width: $i/$columns *100%;
+                }
+            }
+        }
+    }@else{
+            @for $i from 1 through $columns{
+                .col-#{$i}{
+                    width: $i/$columns *100%;
+                }
+            }
+    }
+}
+
+@mixin MediaQuary($TypeOfScreen){
+    @if($TypeOfScreen == "sm"){
+        @media (min-width:"500px") {
+            @content;
+        }
+    }@else if($TypeOfScreen == "md"){
+        @media (min-width:"700px") {
+            @content;
+        }
+    }@else if($TypeOfScreen == "lg"){
+        @media (min-width:"800px") {
+            @content;
+        }
+    }@else if($TypeOfScreen == "xl"){
+        @media (min-width:"1100px") {
+            @content;
+        }
+    }
+}

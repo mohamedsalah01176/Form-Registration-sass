@@ -1,0 +1,15 @@
+button{
+    padding: 10px 10px;
+    border: none;
+    background-color: $priBodyCR;
+    color: $scoBodyCR;
+    font-size: 18px;
+    border-radius: 10px;
+    width: 100%;
+    transition: .5s;
+    &:hover{
+        background-color: $priBodyBG;
+        transform: scale(1.07);
+        color: $priBodyCR;
+    }
+}

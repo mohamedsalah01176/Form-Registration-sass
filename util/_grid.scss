@@ -1,0 +1,11 @@
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+@for $i from 1 through 10{
+    .gap-#{$i}{
+        gap: $i *10px;
+    }
+}
