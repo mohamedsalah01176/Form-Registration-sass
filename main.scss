@@ -7,9 +7,10 @@
 @import "./component/button";
 @import "./spaces/marign";
 @import "./spaces/padding";
-
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
 body{
     min-height:86vh;
+    font-family: "Berkshire Swash", serif;
     color: $priBodyCR;
     margin-top:100px ;
     background-color:$sceBodyBG;
@@ -32,7 +33,28 @@ body{
             }
         }
     }
-
+    .crl1{
+        position: fixed;
+        top: 80px;
+        left: 20px;
+        z-index: -1;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        background-color: red;
+        filter: blur(150px);
+    }
+    .crl2{
+        position: fixed;
+        bottom:  80px;
+        right: 80px;
+        z-index: -1;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        background-color: red;
+        filter: blur(150px);
+    }
 }
 
 @keyframes animationBG {
