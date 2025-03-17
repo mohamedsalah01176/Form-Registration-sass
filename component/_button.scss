@@ -8,7 +8,7 @@ button{
     width: 100%;
     transition: .5s;
     &:hover{
-        background-color: $priBodyBG;
+        background-color: $scoBodyCR;
         transform: scale(1.07);
         color: $priBodyCR;
     }
