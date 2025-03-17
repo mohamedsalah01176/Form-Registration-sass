@@ -94,10 +94,11 @@ button {
   transition: 0.5s;
 }
 button:hover {
-  background-color: black;
+  background-color: white;
   transform: scale(1.07);
   color: red;
 }
+
 
 .m-1 {
   margin: 9px;
