@@ -32,7 +32,13 @@ body{
                 font-size: 20px;
             }
         }
+        .card{
+            @include MediaQuary("lg"){
+                margin: 0px auto;
+            }
+        }
     }
+
     .crl1{
         position: fixed;
         top: 80px;
@@ -55,6 +61,7 @@ body{
         background-color: red;
         filter: blur(150px);
     }
+
 }
 
 @keyframes animationBG {
